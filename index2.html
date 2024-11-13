@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3 ">
+                
+                <div class="card">
+                    <div class="card-header bg-info fw-bold">
+                        MENU
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a id="daftarkaryawan" class="list-group-item bg-light" onclick="tampilkankaryawan()">DAFTAR KARYAWAN</a>
+                            <a class="list-group-item bg-light">TAMBAH KARYAWAN</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9">
+                
+                <div class="card">
+                    <div class="card-header bg-info fw-bold">
+                    TAMBAH KARYAWAN
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3 "> 
+                            <label for= "" class="form-label">NAMA</label>
+                            <input type="text" class="form-control" id="txtNama" value=""></input>
+                        </div>
+                       <div class="mb-3">
+                            <label for="" class="form-label"> Masukan id</label>
+                            <input value="" id="idkaryawan" class="form-control" type="number"> </input>
+                                                       </div>
+                       <div class="mb-3">
+                            <label for="" class="form-label">Masukan Masa Kerja</label>
+                            <input type="number" id="masakerja" class="form-control" value=""  ></input>
+                       </div>
+                       
+
+                    </div>
+                    <div class="card-footer mt-4">
+                        <button class="btn btn-primary" onclick="tambahkaryawan() + tampilkankaryawan()">Simpan</button>
+                        <button class="btn btn-secondary" onclick="cancel()" >Batal</button>    
+
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header bg-info fw-bold">
+                            DAFTAR SISWA
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped text-center" id="tblkaryawan">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>Umur</th>
+                                    <th>Warna Favorit</th>
+                                    <th>Edit</th>
+                                    <th>Hapus</th>                    
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="karyawan.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

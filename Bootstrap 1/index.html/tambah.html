@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+    <style>
+        label{
+            text-shadow: 2px 2px 2px rgb(159, 158, 158);
+        }
+        h1{
+            text-shadow: 2px 2px 5px gray;
+        }
+    </style>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark rounded mt-4 mb-4 p-3 ">
+            <div class="container-fluid ">
+                <a class="navbar-brand fw-bold text-light me-5" href="#">LOGO</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon " ></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 column-gap-3">
+                        <li class="nav-item">
+                        <a class="nav-link active text-light " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light " href="#">Abot</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light  " href="tabel-film.html">Tabel</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light  " href="tambah.html">Tambah mas</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light" href="# ">Disabilitas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="percolumnan">
+            <div class="grid gap-3 row">
+                <div class="col-3">
+                    <div class="list-group">
+                        <h3 class="list-group-item list-group-item-action bg-secondary">Menu</h3>
+                        <li class="list-group-item list-group-item-action ">Nomero Uno</li>
+                        <li class="list-group-item list-group-item-action ">Nomero Dos</li>
+                        <li class="list-group-item list-group-item-action ">Nomero Tres</li>
+                        <li class="list-group-item list-group-item-action ">Nomero Cuatro</li>
+                        <li class="list-group-item list-group-item-action ">Nomero Cinco</li>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="list-group">
+                        <H1 class=" pb-3">TAMBAH FILM</H1>
+                        <div class="card p-4 row-gap-3 mb-5 shadow p-3 mb-5 bg-body-tertiary rounded text-body-dark ">
+                            
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3" >JUDUL</label>
+                            <input type="text" class="form-control shadow-sm p-3 bg-body-tertiary rounded" id="judul" placeholder="Masukan judul film" aria-label="Username" >
+                            </div>
+
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3">DURASI</label>
+                            <input type="number" class="form-control shadow-sm p-3 bg-body-tertiary rounded" id="durasi" placeholder="Masukan durasi film" aria-label="Username" >
+                            </div>
+
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3">RESOLUSI</label>
+                            <select class="form-select shadow-sm p-3 bg-body-tertiary rounded" id="resolusi" aria-label="Default select example">
+                                <option selected>Pilih resolusi</option>
+                                <option value="1">360</option>
+                                <option value="2">720</option>
+                                <option value="3">1080</option>         
+                                <option value="4">1k</option>   
+                                <option value="5">2k</option>
+                            </select>
+                            </div>
+
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3">THUMBNAIL</label>
+                            <input type="file" class="form-control shadow-sm p-3 bg-body-tertiary rounded" id="thumbnail" placeholder="Pilih file" aria-label="Username" >
+                            </div>
+
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3">RATING</label>
+                            <select class="form-select shadow-sm p-3 bg-body-tertiary rounded" id="rating" aria-label="Default select example">
+                                <option selected>Pilih rating</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            </div>
+
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3">TANGGAL RILIS</label>
+                            <input type="date" class="form-control shadow-sm p-3 bg-body-tertiary rounded" id="tanggalrilis" placeholder="Pilih tanggal" aria-label="Username" >
+                            </div>
+
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3">GENRE</label>
+                            <select class="form-select shadow-sm p-3 bg-body-tertiary rounded" id="genre" aria-label="Default select example">
+                                <option selected>Pilih rating</option>
+                                <option value="1">Comedy</option>
+                                <option value="2">Romance</option>
+                                <option value="3">Horor</option>
+                                <option value="4">Action</option>
+                                <option value="5">Sli ce of life</option>
+                            </select>
+                            </div>
+
+                            <div class="isi">
+                            <label for="" class="form-label m-0 fs-5 fw-medium ms-3 ">SINOPSIS</label>
+                            <label for="texarea" class="form-label shadow-sm-sm p-3 bg-body-tertiary rounded">Example textarea</label>
+                            <textarea class="form-control shadow-sm p-3 bg-body-tertiary rounded" id="texarea" rows="3"></textarea>
+                            </div>
+                            
+                                <button class=" end-0 bg-dark text-light col-2 p-2 fs-5 fw-medium rounded ">Simpan</button>
+                            
+                            
+                        </div>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+
