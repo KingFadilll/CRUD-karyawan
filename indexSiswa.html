@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    
+</style>
+<body>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3 ">
+                
+                <div class="card">
+                    <div class="card-header bg-info fw-bold">
+                        MENU
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a id="daftarSiswa" class="list-group-item bg-light" onclick="tampilkansiswa()">DAFTAR SISWA</a>
+                            <a class="list-group-item bg-light">TAMBAH SISWA</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9">
+                
+                <div class="card">
+                    <div class="card-header bg-info fw-bold">
+                    TAMBAH SISWA
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3 "> 
+                            <label for= "" class="form-label">NAMA</label>
+                            <input type="text" class="form-control" id="txtNama" value=""></input>
+                        </div>
+                       <div class="mb-3">
+                            <label for="" class="form-label">Jenis Kelamin</label>
+                            <select name="" id="slcjk" class="form-control">
+                                <option value="">Pilih jenis kelamin</option>
+                                <option value="L">Laki-laki</option>
+                                <option value="P">Perempuan</option>
+                            </select>
+                       </div>
+                       <div class="mb-3">
+                            <label for="" class="form-label">Seberapa Tua Anda?🗿🗿</label>
+                            <input type="number" id="umur" class="form-control" value=""  ></input>
+                       </div>
+                       <div class="mb-3">
+                            <label for="" class="form-label">Warna Favorit</label>
+                            <select name="" id="Fwarna" class="form-control">
+                                <option value="">Pilih Warna Favorit</option>
+                                <option value="merah">Merah</option>
+                                <option value="kuning">Kuning</option>
+                                <option value="hijau">Hijau</option>
+                                <option value="biru">Biru</option>
+                                <option value="ungu">Ungu</option>
+                                <option value="kuning">Kuning</option>
+                                <option value="jingga">Jingga</option>
+                                <option value="Kegelapan">Kegelapan</option>
+                                <option value="coklat">Coklat</option>
+                                <option value="pink">Pink</option>
+                            </select>
+                       </div>
+
+                    </div>
+                    <div class="card-footer mt-4">
+                        <button class="btn btn-primary" onclick="tambahsiswa() + tampilkansiswa()">Simpan</button>
+                        <button class="btn btn-secondary" onclick="cancel()" >Batal</button>    
+
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header bg-info fw-bold">
+                            DAFTAR SISWA
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped" id="tblsiswa">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>Umur</th>
+                                    <th>Warna Favorit</th>
+                                    <th>Edit</th>
+                                    <th>Hapus</th>                    
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./siswa.js"></script>
+</body>
+</html>
